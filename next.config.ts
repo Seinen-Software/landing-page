@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
+const REPO = 'landing-page'
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  basePath: `/${REPO}`,
+  assetPrefix: `/${REPO}/`,
+  trailingSlash: true,
+  images: {
+    unoptimized: true
+  }
 };
 
 export default nextConfig;

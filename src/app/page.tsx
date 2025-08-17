@@ -34,7 +34,7 @@ export default function Home() {
             <div className='relative'>
               <div className='fade-circle landing-image'>
                 <Image
-                  src="/torre_de_babel.jpg"
+                  src="torre_de_babel.jpg"
                   alt="Torre de Babel - Representando la diversidad y colaboración en el desarrollo de software"
                   width={1200}
                   height={1200}
@@ -59,7 +59,7 @@ export default function Home() {
             En tiempos donde lo digital nos atraviesa de forma estructural,
 
             Seinen busca reconfigurarse constantemente como aquel lugar donde acudimos por herramientas para
-            captar entender, generar ideas y alcanzar soluciones.
+            entender, generar ideas y alcanzar soluciones.
           </Paragraph>
         </Section>
 
