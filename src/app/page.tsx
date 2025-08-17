@@ -32,7 +32,7 @@ export default function Home() {
 
           <aside className='flex-grow flex justify-center items-center' role="complementary" aria-label="Imagen representativa">
             <div className='relative'>
-              <div className='fade-circle'>
+              <div className='fade-circle landing-image'>
                 <Image
                   src="/torre_de_babel.jpg"
                   alt="Torre de Babel - Representando la diversidad y colaboración en el desarrollo de software"
@@ -51,61 +51,72 @@ export default function Home() {
         </div>
 
         <Section>
-          <div className='text-lg text-gray-600' role="doc-abstract">
-            <p>
-              Seinen nace de la voluntad de proveer un espacio de fomento para el desarrollo de actividades que transformen esta realidad nuestra de forma positiva.
-            </p>
+          <Paragraph>
+            <strong>Seinen Cooperativa</strong> nace de la voluntad de proveer un espacio de fomento para el desarrollo de actividades que transformen esta realidad nuestra de forma positiva.
+          </Paragraph>
 
-            <p>
-              En tiempos donde lo digital nos atraviesa de forma estructural,
+          <Paragraph>
+            En tiempos donde lo digital nos atraviesa de forma estructural,
 
-              Seinen busca reconfigurarse constantemente como aquel lugar donde acudimos por herramientas para
-              captar informacion, generar ideas y desarrollar soluciones.
-            </p>
-
-            <Subtitle>
-              Aristas
-            </Subtitle>
-
-            <Subtitle depth={2}>
-              Ingenieria
-            </Subtitle>
-
-            <p>
-              Diseño, construcción y mantenimiento de sistemas de información, aplicaciones, procesos y plataformas.
-            </p>
-
-            <Subtitle depth={2}>
-              Comunicacional
-            </Subtitle>
-
-            <p>
-              Estrategia comunicacional y copywriting como prácticas que no solo transmiten datos, sino que construyen sentido.
-            </p>
-
-            <Subtitle depth={2}>
-              Artistica
-            </Subtitle>
-
-            <p>
-              Como fuerza productiva que da movimiento y acentua donde se hace falta.
-            </p>
-          </div>
+            Seinen busca reconfigurarse constantemente como aquel lugar donde acudimos por herramientas para
+            captar entender, generar ideas y alcanzar soluciones.
+          </Paragraph>
         </Section>
 
-        <footer className='fixed bottom-4 left-4 text-sm text-gray-500' role="contentinfo">
-          <p>&copy; 2024 Seinen Cooperativa. Todos los derechos reservados.</p>
+        <Section>
+          <Subtitle>
+            Aristas
+          </Subtitle>
+
+          <Subtitle depth={2}>
+            Ingenieria
+          </Subtitle>
+
+          <Paragraph>
+            Diseño, construcción y mantenimiento de sistemas de información, aplicaciones, procesos y plataformas.
+          </Paragraph>
+
+          <Subtitle depth={2}>
+            Comunicacional
+          </Subtitle>
+
+          <Paragraph>
+            Estrategia comunicacional y copywriting como prácticas que no solo transmiten datos, sino que construyen sentido.
+          </Paragraph>
+
+          <Subtitle depth={2}>
+            Artistica
+          </Subtitle>
+
+          <Paragraph>
+            Como fuerza productiva que da movimiento, color y acento.
+          </Paragraph>
+        </Section>
+
+        <Section>
+          <Subtitle>
+            Capital Humano
+          </Subtitle>
+        </Section>
+
+        <footer className='text-sm text-gray-500' role="contentinfo">
+          <p>&copy; 2025 Seinen Cooperativa. Todos los derechos reservados.</p>
         </footer>
       </main>
     </>
   );
 }
 
-
 const Section: React.FC<PropsWithChildren> = props => (
-  <section className='py-20'>
+  <section className='mt-20 text-lg text-gray-600 w-full'>
     {props.children}
   </section>
+)
+
+const Paragraph: React.FC<PropsWithChildren> = props => (
+  <p className='text-xl text-gray-600'>
+    {props.children}
+  </p>
 )
 
 interface SubtitleProps extends PropsWithChildren {
@@ -115,7 +126,7 @@ interface SubtitleProps extends PropsWithChildren {
 const Subtitle: React.FC<SubtitleProps> = props => {
   const depth = props.depth || 1
 
-  if (![1,2].includes(depth)) {
+  if (![1, 2].includes(depth)) {
     throw new Error('Depth must be 1 or 2')
   }
 
@@ -124,8 +135,8 @@ const Subtitle: React.FC<SubtitleProps> = props => {
       className={
         classNames(
           'font-bold text-gray-900',
-          depth === 1 && 'mt-8 text-4xl mb-4',
-          depth === 2 && 'mt-4 text-xl mb-2',
+          depth === 1 && 'mt-8 text-5xl mb-4',
+          depth === 2 && 'mt-4 text-2xl mb-2',
         )
       }
       tabIndex={0}

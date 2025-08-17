@@ -127,3 +127,7 @@ body {
   mask-size: 100% 100%;
   -webkit-mask-size: 100% 100%;
 }
+
+.landing-image {
+  filter: saturate(0.3)
+}
