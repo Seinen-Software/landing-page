@@ -12,12 +12,12 @@ export default function Home() {
 
       <main
         id="main-content"
-        className='flex flex-col items-center justify-center min-h-screen w-[800px] max-w-full mx-auto'
+        className='flex flex-col items-center justify-center min-h-screen w-[800px] mt-16 max-w-full mx-auto'
         role="main"
       >
         <div className='flex items-center'>
           <div className='flex-grow max-w-4xl mx-auto'>
-            <header className='mb-8'>
+            <header className='mb-8 sticky'>
               <h1 className='text-5xl font-bold text-gray-900 mb-4' tabIndex={0}>
                 Seinen Cooperativa
               </h1>
@@ -38,13 +38,13 @@ export default function Home() {
                   alt="Torre de Babel - Representando la diversidad y colaboración en el desarrollo de software"
                   width={1200}
                   height={1200}
-                  className='rounded-lg shadow-lg'
+                  className='rounded-lg shadow-lg object-cover'
                   priority
                   tabIndex={0}
                 />
               </div>
               <figcaption className='sr-only'>
-                Torre de Babel simbolizando la colaboración y diversidad en el desarrollo de software
+                Torre de Babel simbolizando la colaboración y diversidad envueltas en el desarrollo de emprendimientos
               </figcaption>
             </div>
           </aside>
@@ -73,15 +73,15 @@ export default function Home() {
           </Subtitle>
 
           <Paragraph>
-            Diseño, construcción y mantenimiento de sistemas de información, aplicaciones, procesos y plataformas.
+            Diseño, construcción y mantenimiento de sistemas de información e interfaaces de usuario.
           </Paragraph>
 
           <Subtitle depth={2}>
-            Comunicacional
+            Comuninacional
           </Subtitle>
 
           <Paragraph>
-            Estrategia comunicacional y copywriting como prácticas que no solo transmiten datos, sino que construyen sentido.
+            Estrategia comunicacional, marketing digital, community management, como herramientas para interpelar y constructir sentido.
           </Paragraph>
 
           <Subtitle depth={2}>
@@ -99,7 +99,7 @@ export default function Home() {
           </Subtitle>
         </Section>
 
-        <footer className='text-sm text-gray-500' role="contentinfo">
+        <footer className='sticky bottom-0 text-sm text-gray-500' role="contentinfo">
           <p>&copy; 2025 Seinen Cooperativa. Todos los derechos reservados.</p>
         </footer>
       </main>
