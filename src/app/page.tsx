@@ -56,7 +56,7 @@ export default function Home() {
           </Paragraph>
 
           <Paragraph>
-            Somos programadores, arquitectos de software, profesionales de quality assurance, diseñadores, comunicadores y músicos, entre otras cosas.
+            Somos programadores, arquitectos de software, profesionales de quality assurance, psicólogos, diseñadores y comunicadores, entre otras cosas.
           </Paragraph>
         </Section>
 
@@ -70,11 +70,11 @@ export default function Home() {
           </Subtitle>
 
           <Paragraph>
-            Diseño, construcción y mantenimiento de sistemas de información e interfaaces de usuario.
+            Diseño, construcción y mantenimiento de sistemas de información e interfaces de usuario.
           </Paragraph>
 
           <Subtitle depth={2}>
-            QA
+            Control de calidad (QA)
           </Subtitle>
 
           <Paragraph>
@@ -86,7 +86,7 @@ export default function Home() {
           </Subtitle>
 
           <Paragraph>
-            Estrategia comunicacional, marketing digital, community management.
+            Estrategia comunicacional, branding, marketing digital, community management, copywriting.
           </Paragraph>
 
           <Subtitle depth={2}>
@@ -94,7 +94,7 @@ export default function Home() {
           </Subtitle>
 
           <Paragraph>
-            Como fuerza productiva que da movimiento, color y acento.
+            Producción de ilustraciónes, videos y otros audiovisuales.
           </Paragraph>
         </Section>
 
@@ -102,6 +102,9 @@ export default function Home() {
           <Subtitle>
             Capital Humano
           </Subtitle>
+
+          <Paragraph>
+          </Paragraph>
         </Section>
 
         <footer className='sticky bottom-0 text-sm text-gray-500' role="contentinfo">
