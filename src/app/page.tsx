@@ -52,14 +52,11 @@ export default function Home() {
 
         <Section>
           <Paragraph>
-            <strong>Seinen Cooperativa</strong> nace de la voluntad de proveer un espacio de fomento para el desarrollo de actividades que transformen esta realidad nuestra de forma positiva.
+            <strong>Seinen Cooperativa</strong> es una suerte de "corcho" o tablón online donde un grupo de colegas han decidido publicar sus resúmenes y proyectos para que los conozcas.
           </Paragraph>
 
           <Paragraph>
-            En tiempos donde lo digital nos atraviesa de forma estructural,
-
-            Seinen busca reconfigurarse constantemente como aquel lugar donde acudimos por herramientas para
-            entender, generar ideas y alcanzar soluciones.
+            Somos programadores, arquitectos de software, profesionales de quality assurance, diseñadores, comunicadores y músicos, entre otras cosas.
           </Paragraph>
         </Section>
 
@@ -77,11 +74,19 @@ export default function Home() {
           </Paragraph>
 
           <Subtitle depth={2}>
+            QA
+          </Subtitle>
+
+          <Paragraph>
+            Automatización de testeo de productos digitales.
+          </Paragraph>
+
+          <Subtitle depth={2}>
             Comuninacional
           </Subtitle>
 
           <Paragraph>
-            Estrategia comunicacional, marketing digital, community management, como herramientas para interpelar y constructir sentido.
+            Estrategia comunicacional, marketing digital, community management.
           </Paragraph>
 
           <Subtitle depth={2}>
