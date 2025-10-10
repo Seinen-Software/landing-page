@@ -52,7 +52,7 @@ export default function Home() {
 
         <Section>
           <Paragraph>
-            <strong>Seinen Cooperativa</strong> es una suerte de "corcho" o tablón online donde un grupo de colegas han decidido publicar sus resúmenes y proyectos para que los conozcas.
+            <strong>Seinen Cooperativa</strong> es una suerte de "corcho" o tablón online donde un grupo de colegas han decidido colgar sus resúmenes y proyectos para que los conozcas.
           </Paragraph>
 
           <Paragraph>
